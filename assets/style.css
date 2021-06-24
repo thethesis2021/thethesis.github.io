@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap");
+
+html,
+body {
+  font-family: "Mulish", sans-serif;
+}
+/* #beranda {
+  margin-top: 120px; 
+} */
+.navbar {
+  right: 0;
+  left: 0;
+}
+
+.nav-item .nav-link {
+  font-weight: bold;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+#layanan {
+  background-color: #edf7f1;
+}
+#projek {
+  background-color: #fffcf0;
+}
+
+.text-gold {
+  color: #bf7f1e;
+}
+
+#card-affiliate {
+  box-shadow: 0 0 20px #fdc803;
+}
+
+/* ANIMATION */
+@keyframes blink {
+  0% {
+    box-shadow: 0 0 20px #fdc803;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 0 0 20px #fdc803;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    box-shadow: 0 0 20px #fdc803;
+  }
+  50% {
+    box-shadow: 0 0 0;
+  }
+  100% {
+    box-shadow: 0 0 20px #fdc803;
+  }
+}
+
+#card-affiliate {
+  -webkit-animation: blink 1.5s linear infinite;
+  -moz-animation: blink 1.5s linear infinite;
+  -ms-animation: blink 1.5s linear infinite;
+  -o-animation: blink 1.5s linear infinite;
+  animation: blink 1.5s linear infinite;
+}
+
+/* Section 4 */
+
+#projek .card {
+  opacity: 1;
+  transition: 1s;
+  /* transform: translate(0px, -50px); */
+}
+
+#projek .card {
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.135);
+  position: relative;
+}
+
+#projek .card img {
+  border-radius: 5px;
+}
+
+#projek .tools {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: black;
+  /* color: white; */
+  /* opacity: 0; */
+  transition: 1s;
+  font-size: 10pt;
+  font-family: "Asap", sans-serif;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#projek .tools:hover {
+  opacity: 1 !important;
+  background-color: whitesmoke;
+  /* background-color: rgba(12, 165, 109, 1); */
+}
+/* triger by javascript mouse over for projek card */
+.show-tools {
+  opacity: 0.5 !important;
+}
+
+/* btn-scroll up */
+
+.btn-scroll-up {
+  background-color: rgba(253, 200, 3, 0.19);
+  color: #fdc803;
+  border: 1px solid #fdc803;
+  bottom: 30px;
+  right: 30px;
+  transition: 1s;
+}
+
+.hide-btn-scroll-up {
+  opacity: 0;
+  transition: 1s;
+}
+
+/* For laptop preview */
+
+@media only screen and (min-width: 775px) {
+  .container {
+    width: 90%;
+  }
+  #projek .tools {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    /* opacity: 0.5!important; */
+    /* background-color: rgba(12, 165, 109, .5); */
+    padding-top: 13px;
+    padding-bottom: 13px;
+    color: black;
+    /* color: white; */
+    opacity: 0;
+    transition: 1s;
+    font-size: 10pt;
+    font-family: "Asap", sans-serif;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  #projek .tools:hover {
+    opacity: 1 !important;
+    background-color: whitesmoke;
+    /* background-color: rgba(12, 165, 109, 1); */
+  }
+  .show-tools {
+    opacity: 0.5 !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 70%;
+  }
+  .section-1 .jumbotron {
+    background-image: url("../images/header_ilustrator.png");
+    background-size: 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 80% 40%;
+  }
+  .section-1 .jumbotron .container {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+  }
+}
